@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todd H. Gardner</title>
-    <description>Hey! I'm Todd. I develop businesses and build software. I'm the President and Cofounder  of TrackJS and the Producer of PubConf. I also consult, train, and speak at all kinds of  organizations.
+    <description>Hey! I'm Todd. I develop businesses and build software. I'm the President and Cofounder of TrackJS and the Producer of PubConf. I also consult, train, and speak at all kinds of organizations.
 </description>
     <link>https://todd.mn/</link>
     <atom:link href="https://todd.mn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Dec 2018 17:07:33 +0000</pubDate>
-    <lastBuildDate>Sun, 02 Dec 2018 17:07:33 +0000</lastBuildDate>
+    <pubDate>Sun, 02 Dec 2018 17:26:26 +0000</pubDate>
+    <lastBuildDate>Sun, 02 Dec 2018 17:26:26 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
