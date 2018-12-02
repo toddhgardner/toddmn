@@ -1,0 +1,11 @@
+.asset-cache
+.sass-cache
+_site
+
+# OSX
+*.DS_Store
+
+# Ignore TravisCI artifacts
+.bundle
+vendor
+
