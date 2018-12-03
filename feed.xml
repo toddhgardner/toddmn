@@ -6,8 +6,8 @@
 </description>
     <link>https://todd.mn/</link>
     <atom:link href="https://todd.mn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Dec 2018 17:26:26 +0000</pubDate>
-    <lastBuildDate>Sun, 02 Dec 2018 17:26:26 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Dec 2018 03:57:37 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Dec 2018 03:57:37 +0000</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -65,6 +65,8 @@
         <guid isPermaLink="true">https://todd.mn/article/pub-productivity-and-the-surface-pro/</guid>
         
         
+        <category>article</category>
+        
       </item>
     
       <item>
@@ -98,6 +100,8 @@
         <guid isPermaLink="true">https://todd.mn/article/apple-power-adapter-hack/</guid>
         
         
+        <category>article</category>
+        
       </item>
     
       <item>
@@ -123,6 +127,8 @@
         <link>https://todd.mn/article/combine-gmail-google-apps-inbox/</link>
         <guid isPermaLink="true">https://todd.mn/article/combine-gmail-google-apps-inbox/</guid>
         
+        
+        <category>article</category>
         
       </item>
     
@@ -164,6 +170,8 @@
         <link>https://todd.mn/article/getting-done/</link>
         <guid isPermaLink="true">https://todd.mn/article/getting-done/</guid>
         
+        
+        <category>article</category>
         
       </item>
     
