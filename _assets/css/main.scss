@@ -16,6 +16,25 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 30%);
 
+
+/* Color Palette */
+// coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
+$color-dark-darker: rgba(40, 48, 57, 1);
+$color-dark-medium: rgba(73, 88, 103, 1);
+$color-dark-lighter: rgba(155, 163, 172, 1);
+$color-dark-accent-darker: rgba(104, 117, 128, 1);
+$color-dark-accent-medium: rgba(189, 213, 234, 1);
+$color-dark-accent-lighter: rgba(219, 232, 243, 1);
+$color-light-darker: rgba(135, 135, 140, 1);
+$color-light-medium: rgba(247, 247, 255, 1);
+$color-light-lighter: rgba(250, 250, 255, 1);
+$color-light-accent-darker: rgba(48, 63, 84, 1);
+$color-light-accent-medium: rgba(87, 115, 153, 1);
+$color-light-accent-lighter: rgba(163, 178, 199, 1);
+$color-compliment-darker: rgba(139, 52, 47, 1);
+$color-compliment-medium: rgba(254, 95, 85, 1);
+$color-compliment-lighter: rgba(254, 167, 162, 1);
+
 // Width of the content area
 $content-width:    800px;
 

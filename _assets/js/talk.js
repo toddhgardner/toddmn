@@ -15,25 +15,32 @@
    *
    */
   (function youTubeVideoLoader() {
-    var loaders = [].slice.call(document.querySelectorAll(".js-youtube-loader"), 0);
-    loaders.forEach(function(loader) {
-      loader.addEventListener("click", function(evt) {
-        var target = evt.currentTarget;
-        var videoEl = document.createElement("iframe");
-        videoEl.setAttribute("src", "https://www.youtube-nocookie.com/embed/wqFUPXnqdIo?autoplay=1&modestbranding=1");
-        videoEl.setAttribute("class", "video");
-        videoEl.setAttribute("frameborder", "0");
-        videoEl.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
-        videoEl.setAttribute("allowfullscreen", "1");
-        target.parentElement.appendChild(videoEl);
-      });
-    });
-    // find element anchors,targets
-    // attach click handlers
-      // hide anchor, show loader
-      // have clicks replace anchor-wrap with video
-      // hide loader
-    //fade in anchors
+    function loadYouTubeVideo(evt) {
+      var container = evt.currentTarget.parentElement;
+      if (container.classList.contains("loaded")) {
+        return;
+      }
+      container.classList.add("loaded");
+      var videoId = container.getAttribute("data-video-id");
+      var videoEl = document.createElement("iframe");
+      videoEl.setAttribute("src", "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1&modestbranding=1");
+      videoEl.setAttribute("class", "video");
+      videoEl.setAttribute("frameborder", "0");
+      videoEl.setAttribute("allow", "autoplay;");
+      videoEl.setAttribute("allowfullscreen", "1");
+      container.appendChild(videoEl);
+    }
+
+    var loaders = document.querySelectorAll(".js-youtube-loader");
+    for (var loaderIdx = 0; loaderIdx < loaders.length; loaderIdx++) {
+      var loader = loaders[loaderIdx];
+      var button = document.createElement("button");
+      button.setAttribute("type", "button");
+      button.setAttribute("class", "video-load-button");
+      button.setAttribute("title", "Play");
+      button.addEventListener("click", loadYouTubeVideo);
+      loader.appendChild(button);
+    }
   })();
 
 
