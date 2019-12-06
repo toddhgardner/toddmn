@@ -27,6 +27,9 @@
   font-size: 2em;
   letter-spacing: -1px;
   font-weight: 600;
+  @include media-query($on-palm) {
+    font-size: 1.8em;
+  }
 }
 
 // .site-nav {

@@ -2,6 +2,9 @@
 
   .video-wrap {
     margin: $spacing-unit 0;
+    .layout {
+      padding: 0;
+    }
   }
 
   .video-header {
@@ -21,6 +24,7 @@
 
       img {
         max-width: 100%;
+        width: 100%;
         height: auto;
       }
 
@@ -45,6 +49,45 @@
 
   .talk-description {
     margin-top: $spacing-unit;
+    .breadcrumb {
+      text-transform: uppercase;
+      position: relative;
+      top: 6px;
+      left: 8px;
+      font-weight: 300;
+      font-size: 0.8em;
+      a {
+        color: $color-dark-medium;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $link-color;
+        }
+      }
+    }
+    h1 {
+      font-size: 2.8em;
+      letter-spacing: -1px;
+      font-weight: 700;
+      line-height: 1em;
+      @include media-query($on-palm) {
+        font-size: 2em;
+      }
+    }
+    h2 {
+      font-size: 1.8em;
+      line-height: 1.2em;
+      color: $color-dark-medium;
+      margin-bottom: $spacing-unit;
+      @include media-query($on-palm) {
+        font-size: 1.4em;
+      }
+    }
+    p {
+      font-family: $content-font-family;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
   }
 
 }

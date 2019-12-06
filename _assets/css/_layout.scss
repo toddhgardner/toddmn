@@ -15,10 +15,16 @@
   flex-direction: column;
   margin: 0 auto 0;
   max-width: $content-width;
+  min-width: 320px;
 
   &.layout-wide {
     max-width: 1080px;
   }
+
+  @include media-query($on-laptop) {
+    padding: 0 10px;
+  }
+
 }
 
 
