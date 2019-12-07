@@ -66,7 +66,10 @@
   }
 
   .talk-description {
-    margin: $spacing-unit auto;
+    margin: $spacing-unit*2 auto;
+    @include media-query($on-laptop) {
+      margin: $spacing-unit auto;
+    }
     .breadcrumb {
       text-transform: uppercase;
       position: relative;
@@ -108,7 +111,8 @@
 
   .slide-section {
     flex-direction: row;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit*2;
+
     .slide {
       flex: 0 0 50%;
       .frame {
@@ -127,6 +131,7 @@
 
     @include media-query($on-laptop) {
       flex-direction: column;
+      margin-bottom: $spacing-unit;
       padding: 0;
       .slide-summary .content-padding {
         padding: 20px 10px;
