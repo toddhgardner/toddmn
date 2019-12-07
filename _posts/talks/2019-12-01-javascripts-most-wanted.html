@@ -4,11 +4,11 @@ categories: talks
 title: "JavaScript&rsquo;s Most Wanted"
 subtitle: "The most common and dangerous errors in web applications."
 excerpt: >
-  Something terrible has happened. Errors litter the floor; memory leaking from
+  Something terrible happened. Errors litter the floor; memory leaking from
   cracks in the ceiling. Someone lost their object context in the corner.
-  Everything reeks of jank. The web is overrun. In this session, a JavaScript
+  Everything reeks of jank. The web is overrun with bugs. In this talk, a JavaScript
   error tracking expert tracks down some of the most common and most dangerous
-  outlaws of web applications. You’ll leave the session armed with track down
+  outlaws of web applications. You’ll finished armed to run down
   and capture the problems in your own JavaScript web applications. Bring your
   bugs and let’s fix up our web.
 ---
@@ -21,7 +21,8 @@ excerpt: >
       <div class="video-header">
         <div class="js-youtube-loader video" data-video-id="wqFUPXnqdIo">
           <img src="/assets/img/talks/javascripts-most-wanted/title-1080.png"
-            srcset="/assets/img/talks/javascripts-most-wanted/title-540.png 540w,
+            srcset="/assets/img/talks/javascripts-most-wanted/title-320.png 320w,
+                    /assets/img/talks/javascripts-most-wanted/title-540.png 540w,
                     /assets/img/talks/javascripts-most-wanted/title-720.png 720w,
                     /assets/img/talks/javascripts-most-wanted/title-1080.png 1080w,
                     /assets/img/talks/javascripts-most-wanted/title-1620.png 1620w"
@@ -33,13 +34,40 @@ excerpt: >
     </div>
   </div>
 
-  <div class="layout talk-description">
+  <div class="talk-description layout">
     <span class="breadcrumb">
       <a href="/talks/">talks</a> »
     </span>
     <h1>{{ page.title }}</h1>
     <h2>{{ page.subtitle }}</h2>
     <p>{{ page.excerpt }}</p>
+  </div>
+
+  <div class="slide-section layout layout-wide">
+    <div class="slide">
+      <div class="frame">
+        <img src="/assets/img/talks/javascripts-most-wanted/scripterror-960.png"
+          srcset="/assets/img/talks/javascripts-most-wanted/scripterror-320.png 320w,
+                  /assets/img/talks/javascripts-most-wanted/scripterror-640.png 640w,
+                  /assets/img/talks/javascripts-most-wanted/scripterror-960.png 960w"
+          alt="Script Error Summary" />
+      </div>
+    </div>
+    <div class="slide-summary">
+      <div class="content-padding">
+        <h2>Script Error.</h2>
+        <p>
+          This error has been obfuscated by the browser's Same-Origin Policy. It could be an error
+          from third-party services, advertising networks, social widgets, or anything hosted outside of your domain.
+          Browsers will hide the error details from these scripts to prevent potentially sensitive information from
+          leaking.
+        </p>
+        <p>
+          Capture this browser behavior error by decorating scripts loaded from external domains with a
+          <code>crossorigin</code> attribute.
+        </p>
+      </div>
+    </div>
   </div>
 
 

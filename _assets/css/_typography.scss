@@ -1,4 +1,16 @@
 
+h2, .h2 {
+  font-family: $base-font-family;
+  font-size: 1.8em;
+  font-size: 700;
+  line-height: 1.2em;
+}
+
+p {
+  font-family: $content-font-family;
+}
+
+
 /**
   * Typography Styles
   */

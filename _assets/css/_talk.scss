@@ -1,7 +1,7 @@
 .talk-content {
 
   .video-wrap {
-    margin: $spacing-unit 0;
+    margin: 0 0 $spacing-unit 0;
     .layout {
       padding: 0;
     }
@@ -66,7 +66,7 @@
   }
 
   .talk-description {
-    margin-top: $spacing-unit;
+    margin: $spacing-unit auto;
     .breadcrumb {
       text-transform: uppercase;
       position: relative;
@@ -93,10 +93,8 @@
       }
     }
     h2 {
-      font-size: 1.8em;
-      line-height: 1.2em;
       color: $color-dark-medium;
-      margin-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit/2;
       @include media-query($on-palm) {
         font-size: 1.4em;
       }
@@ -105,6 +103,34 @@
       font-family: $content-font-family;
       font-size: 1.2em;
       line-height: 1.8em;
+    }
+  }
+
+  .slide-section {
+    flex-direction: row;
+    margin-bottom: $spacing-unit;
+    .slide {
+      flex: 0 0 50%;
+      .frame {
+        border: 20px solid $color-dark-darker;
+      }
+      img {
+        box-shadow: 0 0 10px 3px black;
+      }
+    }
+    .slide-summary {
+      flex: 0 0 50%;
+      .content-padding {
+        padding: 0 20px;
+      }
+    }
+
+    @include media-query($on-laptop) {
+      flex-direction: column;
+      padding: 0;
+      .slide-summary .content-padding {
+        padding: 20px 10px;
+      }
     }
   }
 
