@@ -28,6 +28,15 @@
         height: auto;
       }
 
+      .curtain {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color ease 350ms;
+      }
+
       .video-load-button {
         content: " ";
         background: url(/assets/img/videoplay.svg) 0 0 no-repeat;
@@ -43,6 +52,15 @@
         border-radius: 60px;
         border: none;
         cursor: pointer;
+      }
+
+      &.loaded {
+        .curtain {
+          background-color: rgba(0, 0, 0, 1);
+        }
+        .video-load-button {
+          display: none;
+        }
       }
     }
   }
