@@ -43,7 +43,41 @@
     }
   })();
 
+  /**
+   * lazyLoader
+   * Check for images in the docment to be loaded later when visible to the user.
+   * @see https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
+   * @example
+   *   <img class="lazy" data-src="/url/" data-srcset="..." />
+   */
+  (function lazyLoader() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
+    function loadImage(image) {
+      image.setAttribute("src", image.getAttribute("data-src"));
+      image.setAttribute("srcset", image.getAttribute("data-srcset"));
+      image.classList.remove("lazy");
+    }
+
+    if ("IntersectionObserver" in window) {
+      var lazyImageObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var lazyImage = entry.target;
+            loadImage(lazyImage);
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    }
+    else {
+      lazyImages.forEach(loadImage);
+    }
+  })();
 
 });
 
