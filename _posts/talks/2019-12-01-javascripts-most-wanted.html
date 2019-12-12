@@ -93,7 +93,102 @@ excerpt: >
     </div>
   </div>
 
+  <div class="slide-section layout layout-wide">
+    <div class="slide">
+      <div class="frame">
+        <img src="/assets/img/talks/javascripts-most-wanted/thirdparty-960.png"
+          srcset="/assets/img/talks/javascripts-most-wanted/thirdparty-320.png 320w,
+                  /assets/img/talks/javascripts-most-wanted/thirdparty-640.png 640w,
+                  /assets/img/talks/javascripts-most-wanted/thirdparty-960.png 960w"
+          alt="Third-Party Changes Summary" />
+      </div>
+    </div>
+    <div class="slide-summary">
+      <div class="content-padding">
+        <h2>Third-Party Changes</h2>
+        <p>
+          Third-Party scripts that run on your page, such as advertisers and services, change their scripts
+          outside of your control. This can cause unexpected behavior and bugs at inconvenient times.
+        </p>
+        <p>
+          When possible, host third-party scripts from your own servers or CDNs to prevent unplanned changes.
+          Some third-parties, such as <a href="https://trackjs.com/">TrackJS</a>, will make versioned endpoints available.
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <div class="slide-section layout layout-wide">
+    <div class="slide">
+      <div class="frame">
+        <img src="/assets/img/talks/javascripts-most-wanted/missing-960.png"
+          srcset="/assets/img/talks/javascripts-most-wanted/missing-320.png 320w,
+                  /assets/img/talks/javascripts-most-wanted/missing-640.png 640w,
+                  /assets/img/talks/javascripts-most-wanted/missing-960.png 960w"
+          alt="Load Failures Summary" />
+      </div>
+    </div>
+    <div class="slide-summary">
+      <div class="content-padding">
+        <h2>Loading Failures</h2>
+        <p>
+          Individual resources on a page can fail to load in the real world due to flaky networks and unpredictable
+          clients. When an individual resource fails, it can cause unusual errors.
+        </p>
+        <p>
+          Always safety-check for the existance of APIs loaded separately. Before you call jQuery, make sure jQuery
+          exists.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-section layout layout-wide">
+    <div class="slide">
+      <div class="frame">
+        <img src="/assets/img/talks/javascripts-most-wanted/memory-960.png"
+          srcset="/assets/img/talks/javascripts-most-wanted/memory-320.png 320w,
+                  /assets/img/talks/javascripts-most-wanted/memory-640.png 640w,
+                  /assets/img/talks/javascripts-most-wanted/memory-960.png 960w"
+          alt="Memory Leaks Summary" />
+      </div>
+    </div>
+    <div class="slide-summary">
+      <div class="content-padding">
+        <h2>Memory Leaks</h2>
+        <p>
+          Complex web applications that render dynamic elements have a high risk of leaking browser memory. Developers
+          need to take care to avoid references to dynamic elements, such as binding events.
+        </p>
+        <p>
+          Memory audit capabilities have advanced significantly in browsers. You should explore your application periodically
+          for "steps" in memory utilization.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-section layout layout-wide">
+    <div class="slide">
+      <div class="frame">
+        <img src="/assets/img/talks/javascripts-most-wanted/bugs-960.png"
+          srcset="/assets/img/talks/javascripts-most-wanted/bugs-320.png 320w,
+                  /assets/img/talks/javascripts-most-wanted/bugs-640.png 640w,
+                  /assets/img/talks/javascripts-most-wanted/bugs-960.png 960w"
+          alt="Finding Bugs with TrackJS" />
+      </div>
+    </div>
+    <div class="slide-summary">
+      <div class="content-padding">
+        <h2>Find Your Bugs with TrackJS</h2>
+        <p>
+          TrackJS monitors your real production environment for outlaws and errors. You'll know as soon as a user has a
+          problem along with all the details you'll need to recreate the problem and fix it fast. Add
+          <a href="https://trackjs.com/">JavaScript Error Tracking</a> to your site today.
+        </p>
+      </div>
+    </div>
+  </div>
 
 </article>
 
